@@ -27,6 +27,41 @@
             </li>
           </ul>
         </div>
+
+        <p id="stream-status"></p>
+
+        <script>
+          // Configura tu clave de cliente de Twitch
+          const clientId = 'o8r2fzln1hk7b9vx1eubfkuohu9cc1';
+        
+          // Configura el nombre de usuario del canal de Twitch
+          const channelName = 'ocr4m';
+        
+          // Realiza la solicitud a la API de Twitch
+          fetch(`https://api.twitch.tv/helix/streams?user_login=${channelName}`, {
+            headers: {
+              'Client-ID': clientId,
+              'Authorization': 'Bearer TU_ACCESS_TOKEN', // Si es necesario
+            },
+          })
+            .then(response => response.json())
+            .then(data => {
+              const streamStatusElement = document.getElementById('stream-status');
+              
+              // Verifica si el usuario está en stream o no
+              if (data.data.length > 0) {
+                // El usuario está en stream
+                streamStatusElement.textContent = 'El usuario está en stream';
+              } else {
+                // El usuario no está en stream
+                streamStatusElement.textContent = 'El usuario no está en stream';
+              }
+            })
+            .catch(error => {
+              console.error('Error al obtener el estado del stream:', error);
+            });
+        </script>
+        
         <!-- Seccion Podcast -->
         <div class="row justify-content-center">
             <div class="col-lg-8 d-flex flex-column align-items-center">
