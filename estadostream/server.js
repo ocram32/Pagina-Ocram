@@ -4,8 +4,8 @@ const axios = require('axios');
 const app = express();
 
 // Configuración de la API de Twitch Helix
-const clientId = "b1wf2uwc9fyu0tl741tozqgq2sjc69";
-const clientSecret = "slq56t35mtdvbbvl8yk53zu6aq6jog";
+const clientId = process.env.TWITCH_CLIENT_ID;
+const clientSecret = process.env.TWITCH_CLIENT_SECRET;
 
 // Ruta para obtener el estado de transmisión de un usuario
 app.get('/stream-status/:username', async (req, res) => {
