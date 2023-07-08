@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
     <script src="https://kit.fontawesome.com/4e9f1b96ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body style="background-color: #E7D27C ;" >
     <!-- Foto y Bio -->
@@ -28,7 +29,19 @@
           </ul>
         </div>
 
-        <p id="stream-status"></p>
+                <!-- Seccion Stream -->
+                <div class="row justify-content-center">
+                  <div class="col-lg-8 d-flex flex-column align-items-center">
+                    <div ></div>
+          <div class="card w-100 border-0 shadow mt-3">
+              <div class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif;font-size: 20px;">
+                <i class="bi bi-twitch"></i> Streams
+              </div>
+            <iframe src="https://salaslpm.com/estadostream" frameborder="0" height="550px" style="padding: 20px;"></iframe>
+            </div>
+          </div>
+        </div>
+
         
         <!-- Seccion Podcast -->
         <div class="row justify-content-center">
@@ -164,30 +177,4 @@
 </div>
 </div>
 </div>
-
-<script>
-// Configura tu clave de cliente de Twitch
-const clientId = 'b1wf2uwc9fyu0tl741tozqgq2sjc69';
-
-// Configura el nombre de usuario del canal de Twitch
-const channelName = 'ocr4m';
-
-// Configura tu token de acceso OAuth válido
-const accessToken = 'hw7jjcwh38pbgmelspkhli2nchoybw';
-
-// Realiza la solicitud a la API de Twitch
-fetch(`https://api.twitch.tv/helix/streams?user_login=${channelName}`, {
-  headers: {
-    'Client-ID': clientId,
-    'Authorization': `Bearer ${accessToken}`,
-  },
-})
-  .then(response => response.json())
-  .then(data => {
-    // Resto del código para actualizar el estado del stream
-  })
-  .catch(error => {
-    console.error('Error al obtener el estado del stream:', error);
-  });
-</script>
 </body>
