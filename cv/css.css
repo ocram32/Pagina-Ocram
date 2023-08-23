@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap);
+.cover {
+    background: url('https://fakeimg.pl/1024x400') no-repeat center center;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cover-text {
+    margin-left: 10%;
+}
+
+.cover-text {
+    animation: slideInFromBottom 10s ease-out;
+  }
+  
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5em;
+    animation: slideInFromBottom 10s ease-out;
+
+}
+p {
+    font-size: 1.2em;
+}
+@media (max-width: 768px) {
+    .cover {
+        justify-content: center;
+    }
+    .cover-text {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+  
+  
