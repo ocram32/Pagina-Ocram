@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap);
+
+.d-block.d-md-none {
+    height: 1px;
+}
+#textofooter {
+    margin-bottom: 0px;
+    padding: 20px;
+    font-size: 12px;
+}
+.formacion {
+    background-color: #d4c588;
+}
+.links {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .links .link {
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px;
+    color: #fff;
+    border: 2px solid #BC9047;
+    background-color: #BC9047;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+  }
+  
+  .links .link:hover {
+    color: #BC9047;
+    background-color: transparent;
+  }
+
+
+.tiktok-embed{
+        height: 580px;
+        width: 300px !important;
+}
+#etiqueta{
+    color: rgb(69, 69, 69);
+    display: inline-block;
+    font-size: 15px;
+}
+
+#titulotrayectoria {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 400;
+    margin: 0px;
+}
+.titulo {
+    background-color: #f5e5a3;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#titulonombre {
+    font-weight: 600;
+}
+.cover {
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cover-text {
+    margin-left: 10%;
+    font-weight: 600 !important; 
+}
+  
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.2em;
+}
+@media (max-width: 768px) {
+    .cover {
+        justify-content: center;
+    }
+    .cover-text {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+  
+  /* Estilos para la línea de tiempo */
+  
+  .project-section.timeline {
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+#lista {
+    padding-left: 20px;
+}
+
+#habilidades {
+    margin-bottom: 0px;
+}
+  .timeline-dot {
+    margin: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #000; /* Borde del punto */
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: background-color 0.3s ease; /* Transición para rellenar el punto */
+    z-index: 1; /* Sobre la línea vertical */
+  }
+  
+  .timeline-dot.active-dot {
+    margin: 20px;
+    background-color: #000; /* Relleno del punto al estar activo */
+  }
+  
+  .timeline-line {
+    margin-left: 20px;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #000;
+    z-index: 0; /* Detrás de los puntos */
+  }
+  
+  /* ... */
+  
+  /* Estilos para proyectos impares */
+  .project-section.timeline:nth-child(odd) {
+    background-color: #d5c172; /* Color de fondo para proyectos impares */
+  }
+  
+  /* Estilos para proyectos pares */
+  .project-section.timeline:nth-child(even) {
+    background-color: #e7d27c; /* Color de fondo para proyectos pares */
+  }
+  
+  /* Estilos para proyectos activos */
+  .project-section.timeline.active-dot .project-content {
+    display: block; /* Mostrar contenido al llegar a la sección */
+  }
+
+  
+  .timeline-dot {
+    /* ... */
+  }
+  
+  .timeline-line {
+    /* ... */
+  }
+  
+  /* ... */
+  
+  /* Estilos para proyectos activos */
+  .project-section.timeline.active-dot .project-content {
+    display: block; /* Mostrar contenido al llegar a la sección */
+    opacity: 0; /* Comenzar con opacidad 0 */
+    transform: translateY(20px); /* Desplazamiento hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+  }
+  
+  .project-section.timeline.active-dot .project-content.animate__fadeInUp {
+    opacity: 1; /* Hacer visible al llegar a la sección */
+    transform: translateY(0); /* Sin desplazamiento */
+  }
+  
+ /* Estilos para la sección de formación */
+ .education {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Eliminamos el margin bottom */
+  }
+  .education-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .education-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0; /* Eliminamos el margin */
+  }
+  .education-institution {
+    font-size: 14px;
+    margin: 0; /* Eliminamos el margin */
+  }
+  .education-dates {
+    font-size: 12px;
+    color: #5b5b5b;
+    margin: 0; /* Eliminamos el margin */
+  }
+
+    /* Estilos para la sección de premios y reconocimientos */
+    .premios {
+        background-color: #d4c588;
+    }
+    .awards {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .award-title {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+      }
+      .award-institution {
+        font-size: 14px;
+        margin: 0;
+      }
+      .award-paragraph {
+        margin: 0;
+      }
+      .award-link {
+        color: blue;
+        text-decoration: underline;
+      }
+      .award-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      .small-award-image {
+        max-width: 100%;
+        height: auto;
+        max-height: 100px; /* Ajusta la altura según necesites */
+      }
+      .column-image {
+        max-height: 300px; /* Ajusta la altura según necesites */
+      }
+      .contactoseccion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+        background-image: url('https://fakeimg.pl/1024x400');
+      }
+      .contacto-text {
+        flex: 1;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      .social-icon {
+        width: 60px;
+        height: 60px;
+      }
+      .contact-info {
+        flex: 1;
+      }
+      @media (max-width: 768px) {
+        .contactoseccion {
+          flex-direction: column;
+        }
+        .social-icons {
+          margin-bottom: 0;
+        }
+        .contacto-text,
+        .contact-info {
+          text-align: center;
+        }
+        .contacto-text {
+          margin-bottom: 20px;
+        }
+      }
