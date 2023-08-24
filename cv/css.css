@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap);
 
-
+.d-block.d-md-none {
+    height: 1px;
+}
 #textofooter {
     margin-bottom: 0px;
     padding: 20px;
