@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV - Soy Ocram</title>
-    <link rel="shortcut icon" href="marco.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="https://soyocram.com/marco.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -14,22 +14,21 @@
 <body>
     <div class="cover">
       <video autoplay muted loop id="video-background">
-        <source src="media/portada.mkv" type="video/mp4">
+        <source src="media/portada.mp4" type="video/mp4">
         Tu navegador no soporta la etiqueta de video.
       </video>
         <div class="cover-text animate__animated animate__fadeInDown">
           <h1 id="titulonombre">Ocram <p class="d-block d-md-none"><br></p>(Marco Ferrari)</h1>
-          <p>Conductor / Creador de contenidos / Social Media Manager</p>
+          <p id="slogan">Conductor / Creador de contenidos / Social Media Manager</p>
+        </div>  
         </div>
-        <!-- 
+        </div>
         <div class="text-center">
-        <div class="arrow-down">
-          <a href="#proyectos">
-          <i class="bi bi-arrow-down-circle-fill white-arrow"></i></a>
-          -->
-        </div>
-        </div>
-      </div>
+          <a href="#proyectos" class="arrow-link">
+            <i class="bi bi-arrow-down-circle"></i>
+        </a>  
+      </div>  
+  </div>
     <section class="titulo">
    
         <h1 id="titulotrayectoria">Proyectos</h1>
@@ -163,8 +162,12 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="text-center">
-              <iframe src="https://www.instagram.com/reel/CmXsU2tLzXo/embed" frameborder="0" scrolling="no" width="300px" height="530px" style="padding: 20px;"></iframe>
-               <p class="text-center">Reel 1 millón de visualizaciones</p>
+                  <div class="embed-responsive embed-responsive-1by1">
+                    <video controls class="embed-responsive-item">
+                      <source src="media/reel1m.mp4" type="video/mp4">
+                      Tu navegador no soporta el elemento de video.
+                    </video>
+                  </div>               <p class="text-center" id="reel1m">Reel 1 millón de visualizaciones</p>
             </div>
               </div> <br>
               <div class="col-md-4">
@@ -178,7 +181,7 @@
               </div>
               <div class="col-md-4">
                 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@srocram/video/7184619121374399750" data-video-id="7184619121374399750" style="max-width: 605px;min-width: 225px;" > <section> <a target="_blank" title="@srocram" href="https://www.tiktok.com/@srocram?refer=embed">@srocram</a> La conocías? <a title="influencers" target="_blank" href="https://www.tiktok.com/tag/influencers?refer=embed">#influencers</a> <a title="curiosidades" target="_blank" href="https://www.tiktok.com/tag/curiosidades?refer=embed">#curiosidades</a> <a title="sabiasque" target="_blank" href="https://www.tiktok.com/tag/sabiasque?refer=embed">#sabiasque</a> <a title="lilmiquela" target="_blank" href="https://www.tiktok.com/tag/lilmiquela?refer=embed">#lilmiquela</a> <a target="_blank" title="♬ CAIRO - KAROL G &#38; Ovy On The Drums" href="https://www.tiktok.com/music/CAIRO-7163720788871219201?refer=embed">♬ CAIRO - KAROL G &#38; Ovy On The Drums</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"  style="padding: 20px;"></script>
-                <p class="text-center">Contenido "¿Sabias Qué?"</p>
+                <p class="text-center" id="reel1m">Contenido "¿Sabias Qué?"</p>
               </div>
             </div>
           </div>
@@ -231,7 +234,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="d-flex justify-content-center">
-                    <iframe src="https://www.instagram.com/nefascrew/embed" scrolling="no" allowfullscreen height="400px" width="600px"></iframe>
+                    <iframe class="nefasembed" src="https://www.instagram.com/nefascrew/embed" scrolling="no" allowfullscreen></iframe>
                   </div>
               </div> <br>
               <div class="col-md-4">
@@ -339,7 +342,7 @@
     </section>
         <section class="contactoseccion">
           <video autoplay muted loop id="video-background">
-            <source src="media/portada.mkv" type="video/mp4">
+            <source src="media/portada.mp4" type="video/mp4">
             Tu navegador no soporta la etiqueta de video.
           </video>
             <div class="contacto-text text animate__animated animate__fadeInDown">
@@ -364,8 +367,8 @@
 
           <footer>
             <section class="titulo">
-                <p id="textofooter">Pagina web creada por mí en HTML, CSS y JavaScript</p>
-            </section>
+                <p id="textofooter">Los contenidos de esta web de <a id="linkfooter" href="https://marcoferrari.com.ar/agora/">Ocram (Marco Ferrari)</a> se encuentran licenciado bajo <a id="linkfooter" href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.es/">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Licencia Internacional</a>.</p>
+              </section>
           </footer>
 </body>
 </html>
