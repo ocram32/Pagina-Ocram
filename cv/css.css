@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
     padding: 0 10px;
   }
-  
+
   .links .link {
     display: block;
     width: 100%;
@@ -51,7 +51,7 @@ body {
     width: 300px;
     height: 600px;
   }
-  
+
   .links .link:hover {
     color: #BC9047;
     background-color: transparent;
@@ -84,7 +84,18 @@ body {
     background-color: #f5e5a3;
 }
 
+.vistoen {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  width: 200px;
+  height: 50px;
+  margin-bottom: 15px;
+}
 
+.vistoen:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
 
 #video-background {
   opacity: 1.2;
@@ -112,9 +123,9 @@ body {
 
 .cover-text {
     margin-left: 10%;
-    font-weight: 600 !important; 
+    font-weight: 600 !important;
 }
-  
+
 h1 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2.5em;
@@ -131,9 +142,9 @@ p {
         text-align: center;
     }
 }
-  
+
   /* Estilos para la línea de tiempo */
-  
+
   .project-section.timeline {
     position: relative;
     padding-left: 60px;
@@ -161,12 +172,12 @@ p {
     transition: background-color 0.3s ease; /* Transición para rellenar el punto */
     z-index: 1; /* Sobre la línea vertical */
   }
-  
+
   .timeline-dot.active-dot {
     margin: 20px;
     background-color: #000; /* Relleno del punto al estar activo */
   }
-  
+
   .timeline-line {
     margin-left: 20px;
     position: absolute;
@@ -177,35 +188,35 @@ p {
     background-color: #000;
     z-index: 0; /* Detrás de los puntos */
   }
-  
+
   /* ... */
-  
+
   /* Estilos para proyectos impares */
   .project-section.timeline:nth-child(odd) {
     background-color: #d5c172; /* Color de fondo para proyectos impares */
   }
-  
+
   /* Estilos para proyectos pares */
   .project-section.timeline:nth-child(even) {
     background-color: #e7d27c; /* Color de fondo para proyectos pares */
   }
-  
+
   /* Estilos para proyectos activos */
   .project-section.timeline.active-dot .project-content {
     display: block; /* Mostrar contenido al llegar a la sección */
   }
 
-  
+
   .timeline-dot {
     /* ... */
   }
-  
+
   .timeline-line {
     /* ... */
   }
-  
+
   /* ... */
-  
+
   /* Estilos para proyectos activos */
   .project-section.timeline.active-dot .project-content {
     display: block; /* Mostrar contenido al llegar a la sección */
@@ -213,12 +224,12 @@ p {
     transform: translateY(20px); /* Desplazamiento hacia abajo */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
   }
-  
+
   .project-section.timeline.active-dot .project-content.animate__fadeInUp {
     opacity: 1; /* Hacer visible al llegar a la sección */
     transform: translateY(0); /* Sin desplazamiento */
   }
-  
+
  /* Estilos para la sección de formación */
  .education {
     display: flex;
@@ -331,7 +342,7 @@ p {
         height: 40vh; /* Ajusta la altura según tus necesidades */
         color: white;
       }
-      
+
       #video-background {
         position: absolute;
         top: 0;
@@ -341,13 +352,13 @@ p {
         object-fit: cover;
         z-index: -1;
       }
-      
+
       .contacto-text,
       .contact-info {
         position: relative; /* Asegura que el contenido esté sobre el video */
         z-index: 1;
       }
-      
+
       /* Resto de tus estilos para las redes sociales y la información de contacto */
       .arrow-down {
         position: absolute;
@@ -356,7 +367,7 @@ p {
         font-size: 34px;
         color: white;
       }
-      
+
       .white-arrow {
         color: white;
       }
@@ -408,7 +419,6 @@ p {
   font-size: 44px;
 }
 }
-      
-      
-      
-      
+
+
+
