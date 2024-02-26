@@ -21,6 +21,41 @@
 
   gtag('config', 'G-R75FEBT1ZR');
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Evento para el botón de "Escritos"
+    document.getElementById('btnEscritos').addEventListener('click', function() {
+      gtag('event', 'click', {
+        'event_category': 'Botones',
+        'event_label': 'Escritos'
+      });
+    });
+
+    // Evento para el botón de "TikTok"
+    document.getElementById('btnTikTok').addEventListener('click', function() {
+      gtag('event', 'click', {
+        'event_category': 'Botones',
+        'event_label': 'TikTok'
+      });
+    });
+
+    // Evento para el botón de "Instagram"
+    document.getElementById('btnInstagram').addEventListener('click', function() {
+      gtag('event', 'click', {
+        'event_category': 'Botones',
+        'event_label': 'Instagram'
+      });
+    });
+
+    // Evento para el botón de "Porfolio / CV"
+    document.getElementById('btnPortfolio').addEventListener('click', function() {
+      gtag('event', 'click', {
+        'event_category': 'Botones',
+        'event_label': 'Porfolio / CV'
+      });
+    });
+  });
+</script>
 </head>
 
 <body style="background-color: #E7D27C;">
@@ -47,14 +82,14 @@
       <div class="col-lg-8 d-flex flex-column align-items-center">
         <div class="card w-100 border-0 shadow mt-2">
           <a href="https://ocr4m.medium.com" target="_blank" style="text-decoration: none;">
-          <div class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
+          <div id="btnEscritos" class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
               <i class="fas fa-pen-nib"></i> Escritos
           </div>
       </div>
     </a>
           <div class="card w-100 border-0 shadow">
             <a href="https://tiktok.com/@srocram" target="_blank" style="text-decoration: none;">
-              <div class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
+              <div id="btnTikTok" class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
                   <i class="bi bi-tiktok"></i> TikTok
               </div>
           </div>
@@ -62,7 +97,7 @@
 
           <div class="card w-100 border-0 shadow mt-2">
             <a href="https://instagram.com/soyocram" target="_blank" style="text-decoration: none;">
-              <div class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
+              <div  class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
                   <i class="bi bi-instagram"></i> Instagram
               </div>
           </div>
@@ -88,7 +123,7 @@
         <div class="col-lg-8 d-flex flex-column align-items-center">
           <div class="card w-100 border-0 shadow mt-2">
             <a href="https://soyocram.com.ar/cv" target="_blank" style="text-decoration: none;">
-            <div class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
+            <div id="btnPortfolio" class="card-header border-0 text-center font-weight-bold" style="font-family: 'Zen Kurenaido', sans-serif; font-size: 20px;">
                 <i class="fas fa-briefcase"></i> Porftolio / CV
             </div>
         </div>
